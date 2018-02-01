@@ -17,7 +17,7 @@ title: Code With the Flow
 email: omar.imam@kineticvortex.com
 description: >- # this means to ignore newlines until "baseurl:"
   A full-stack web developer, an entrepreneur, an artist, a lifelong learner and a dreamer, among other things. This is the gateway to the inner workings of my mind.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://flowmar.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kvflowmar
 github_username: flowmar
