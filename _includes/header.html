@@ -1,23 +1,9 @@
-<header>
-    <h1>
-      
-      {% for my_page in site.pages %}
-      {% if my_page.title %}
-      <a href="{{ my_page.url | relative_url }}" class="page-link">
-        {{ my_page.title | escape }}
-      </a>
+<nav>
+  <ul class="list-inline">
+    {% for each_page in site.html_pages %}
+      {% if each_page.title %}
+      <a href="./{{ each_page.url | relative_url }}"><li class="list-inline-item">{{ each_page.title }}</li></a>
       {% endif %}
       {% endfor %}
-    </h1>
-
-<nav>
-    <ul>
-      {% for each_page in site.pages %}
-        {% if each_page.title %}<li><a href="/">{{ each_page.title | escape }}</a></li>
-        <!-- <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li> -->
-        {% endif %}{% endfor %}
-    </ul>
+  </ul>
 </nav>
-</header>

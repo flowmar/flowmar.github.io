@@ -1,24 +1,46 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
+title: Hello World!
+tagline: Supporting tagline
 ---
+{% include JB/setup %}
 
-<h1>Flowmar's Stuffs<br>
+Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
 
-I love coding!
+Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 
-<br>
+## Update Author Attributes
 
-<div>
-{% for post in site.posts %}
-<a href="{{ post.url }}"><h2> {{ post.title }}</h2></a>
-{{ post.content | strip_html | truncatewords: 40 }}
+# In `_config.yml` remember to specify your own data:
+    
+    title : Code with the Flow
+    
+    author :
+      name : Name Lastname
+      email : blah@email.test
+      github : username
+      twitter : username
 
-<br>
-<em>Posted on {{ post.date | date_to_string }}</em>
+The theme should reference these variables whenever needed.
+    
+## Sample Posts
 
-<br>
-{% endfor %}
-</div>
+This blog contains sample posts which help stage pages and blog data.
+When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+
+    $ rm -rf _posts/core-samples
+
+Here's a sample "posts list".
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
+## To-Do
+
+This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
+We need to clean up the themes, make theme usage guides with theme-specific markup examples.
+
+
