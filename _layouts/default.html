@@ -1,36 +1,13 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    
-    <title>{% if page.title %} {{ page.title }} | {% endif %} Omar Imam, Web Developer</title>
-    <link href="/css/style.css" rel="stylesheet">
 
-</head>
+    {% include head.html %}
 <body>
-    
-    <div id="main">
+        {% include header.html %}
 
-        <header>
-            <h1>Flowmar's Musings</h1>
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-
+    <div class="page-content">
+    <div class="wrapper">
         {{ content }}
-
-        <footer>
-            <p>&copy; Omar Imam 2018 | All Rights Reserved.</p>
-        </footer>
-    </div>
+</div></div>
+       {% include footer.html %}
 </body>
 </html>
