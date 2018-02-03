@@ -28,7 +28,7 @@ author :
 #
 production_url : https://flowmar.github.io
 
-plugins: ["jekyll-sitemap", "bootstrap", "autoprefixer-rails", "jekyll-bootstrap-sass"]
+plugins: ["jekyll-sitemap", "bootstrap", "autoprefixer-rails", "jekyll-bootstrap-sass", "jekyll-admin"]
 
 sass:
     load_paths:

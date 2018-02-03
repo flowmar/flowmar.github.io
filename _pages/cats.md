@@ -1,6 +1,7 @@
 ---
 layout: default
 title: The Board of Cats
+permalink: /cats/
 ---
 
 <div class="home">

@@ -11,4 +11,5 @@ group :jekyll_plugins do
   gem 'jekyll-assets'
   gem 'jekyll-bootstrap-sass'
   gem 'rouge'
+  gem 'jekyll-admin'
 end
