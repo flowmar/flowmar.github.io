@@ -10,6 +10,7 @@ baseurl: "/cats"
 <ul>
 {% for cat in site.data.cats %}
   <li>{{cat.name}}</li>
+  <li><img src="{{cat.picture}}" alt="cat picture"></li>
 {% endfor %}
 </ul>
   <p>If my blog were a collection of cats instead of posts, I'd have {{ site.posts.size }} cats.

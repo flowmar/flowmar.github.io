@@ -2,7 +2,7 @@
   <ul class="list-inline">
     {% for each_page in site.html_pages %}
       {% if each_page.title %}
-      <a href="./{{ each_page.url | relative_url }}"><li class="list-inline-item">{{ each_page.title }}</li></a>
+      <a href="{{ each_page.url }}"><li class="list-inline-item">{{ each_page.title }}</li></a>
       {% endif %}
       {% endfor %}
   </ul>
