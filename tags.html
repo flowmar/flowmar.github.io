@@ -6,16 +6,22 @@ group: navigation
 ---
 {% include JB/setup %}
 
-<ul class="tag_box inline">
+<ul class="tag_box inline border border-light list-unstyled p-3">
   {% assign tags_list = site.tags %}  
   {% include JB/tags_list %}
 </ul>
 
+<br>
 
 {% for tag in site.tags %} 
-  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+<br><hr class="bg-white">
+  <h4 class="font-weight-bold text-uppercase text-center display-4" id="{{ tag[0] }}-ref">{{ tag[0] }}</h4>
+<br><hr class="bg-white">
+  
   <ul>
     {% assign pages_list = tag[1] %}  
     {% include JB/pages_list %}
   </ul>
+  <hr class="bg-white">
+  <br>
 {% endfor %}

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: The Board of Cats
-baseurl: "/cats"
 ---
 
 <div class="home">

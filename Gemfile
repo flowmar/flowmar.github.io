@@ -9,6 +9,6 @@ group :jekyll_plugins do
   gem 'autoprefixer-rails'
   gem 'bootstrap'
   gem 'jekyll-assets'
-  gem 'rouge'
   gem 'jekyll-bootstrap-sass'
+  gem 'rouge'
 end

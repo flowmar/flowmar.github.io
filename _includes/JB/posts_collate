@@ -28,12 +28,11 @@ Usage:
   
     {% if forloop.first %}
       <h2>{{this_year}}</h2>
+      <br>
       <h3>{{this_month}}</h3>
       <ul>
     {% endif %}
-  
     <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  
     {% if forloop.last %}
       </ul>
     {% else %}
@@ -45,6 +44,7 @@ Usage:
       {% else %}    
         {% if this_month != next_month %}
           </ul>
+          <br>
           <h3>{{next_month}}</h3>
           <ul>
         {% endif %}

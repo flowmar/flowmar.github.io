@@ -1,9 +1,9 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:year/:month/:day/:title 
+permalink: /:title 
 
 include: ["_pages"]
-permalink: /:title/
+
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "node_modules"]
 highlighter: rouge
 markdown: kramdown
@@ -33,7 +33,7 @@ plugins: ["jekyll-sitemap", "bootstrap", "autoprefixer-rails", "jekyll-bootstrap
 sass:
     load_paths:
       - _sass
-      - node_modules
+      
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
